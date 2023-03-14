@@ -25,9 +25,9 @@ dataset.mis = data.frame(prodNA(dataset[,1:3], noNA = 0.05), subcategory, catego
 
 # save a copy of the dataset in .csv
 write.csv(dataset.mis, 
-          "C:/Users/julia/OneDrive/Desktop/github/4.Violin_Boxplots/dataset.mis.csv",
+          "path/dataset.mis.csv",
           row.names = FALSE)
-dataset.mis = read.csv("C:/Users/julia/OneDrive/Desktop/github/4.Violin_Boxplots/dataset.mis.csv", 
+dataset.mis = read.csv("path/dataset.mis.csv", 
                        header = TRUE)
 
 dataset.mis[298:301, ] # excerpt of the dataset contains NA values
